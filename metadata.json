@@ -1,0 +1,6 @@
+{
+  "name": "Leandro Rodríguez — Abogado",
+  "description": "Estudio jurídico en Córdoba especializado en defensa penal, ciberdelitos, derecho del consumidor, familia y derecho laboral. Consulta gratuita.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

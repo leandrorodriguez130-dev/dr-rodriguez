@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-serif-brand {
+    font-family: 'Cinzel', 'Cormorant Garamond', Georgia, serif;
+  }
+  .font-sans-brand {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  .text-silver-metallic {
+    background: linear-gradient(180deg, #F1F5F9 0%, #CBD5E1 40%, #94A3B8 60%, #CBD5E1 80%, #F1F5F9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .bg-silver-gradient {
+    background: linear-gradient(90deg, #94A3B8 0%, #E2E8F0 50%, #94A3B8 100%);
+  }
+
+  .border-silver-gradient {
+    border-image: linear-gradient(90deg, rgba(148, 163, 184, 0.3), rgba(226, 232, 240, 0.8), rgba(148, 163, 184, 0.3)) 1;
+  }
+}
+
+/* Micro-relief SVG texture backgrounds (fine ornamental damask / baroque filigree embossing) */
+.relief-bg {
+  background-color: #0B1E3D;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3C!-- Shadow Layer for Navy relief --%3E%3Cg stroke='%23050F1F' stroke-width='1.4' transform='translate(1, 1)'%3E%3Cpath d='M60,10 C50,25 35,30 20,30 C5,30 0,45 0,60 C0,75 5,90 20,90 C35,90 50,95 60,110 C70,95 85,90 100,90 C115,90 120,75 120,60 C120,45 115,30 100,30 C85,30 70,25 60,10 Z'/%3E%3Cpath d='M60,25 C60,40 45,55 30,55 C15,55 10,60 10,60 C10,60 15,65 30,65 C45,65 60,80 60,95 C60,80 75,65 90,65 C105,65 110,60 110,60 C110,60 105,55 90,55 C75,55 60,40 60,25 Z'/%3E%3Cpath d='M60,45 C55,52 48,55 40,55 M60,75 C55,68 48,65 40,65 M60,45 C65,52 72,55 80,55 M60,75 C65,68 72,65 80,65'/%3E%3Ccircle cx='60' cy='60' r='5'/%3E%3Ccircle cx='0' cy='0' r='14'/%3E%3Ccircle cx='120' cy='0' r='14'/%3E%3Ccircle cx='0' cy='120' r='14'/%3E%3Ccircle cx='120' cy='120' r='14'/%3E%3Cpath d='M0,20 C10,20 20,10 20,0 M120,20 C110,20 100,10 100,0 M0,100 C10,100 20,110 20,120 M120,100 C110,100 100,110 100,120'/%3E%3C/g%3E%3C!-- Highlight Layer for Navy relief (subtle light shift) --%3E%3Cg stroke='%2316345E' stroke-width='1.1' opacity='0.7'%3E%3Cpath d='M60,10 C50,25 35,30 20,30 C5,30 0,45 0,60 C0,75 5,90 20,90 C35,90 50,95 60,110 C70,95 85,90 100,90 C115,90 120,75 120,60 C120,45 115,30 100,30 C85,30 70,25 60,10 Z'/%3E%3Cpath d='M60,25 C60,40 45,55 30,55 C15,55 10,60 10,60 C10,60 15,65 30,65 C45,65 60,80 60,95 C60,80 75,65 90,65 C105,65 110,60 110,60 C110,60 105,55 90,55 C75,55 60,40 60,25 Z'/%3E%3Cpath d='M60,45 C55,52 48,55 40,55 M60,75 C55,68 48,65 40,65 M60,45 C65,52 72,55 80,55 M60,75 C65,68 72,65 80,65'/%3E%3Ccircle cx='60' cy='60' r='5'/%3E%3Ccircle cx='0' cy='0' r='14'/%3E%3Ccircle cx='120' cy='0' r='14'/%3E%3Ccircle cx='0' cy='120' r='14'/%3E%3Ccircle cx='120' cy='120' r='14'/%3E%3Cpath d='M0,20 C10,20 20,10 20,0 M120,20 C110,20 100,10 100,0 M0,100 C10,100 20,110 20,120 M120,100 C110,100 100,110 100,120'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.relief-bg-beige {
+  background-color: #F5F0E8;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3C!-- Shadow Layer for Beige relief --%3E%3Cg stroke='%23E0D6C6' stroke-width='1.4' transform='translate(1, 1)'%3E%3Cpath d='M60,10 C50,25 35,30 20,30 C5,30 0,45 0,60 C0,75 5,90 20,90 C35,90 50,95 60,110 C70,95 85,90 100,90 C115,90 120,75 120,60 C120,45 115,30 100,30 C85,30 70,25 60,10 Z'/%3E%3Cpath d='M60,25 C60,40 45,55 30,55 C15,55 10,60 10,60 C10,60 15,65 30,65 C45,65 60,80 60,95 C60,80 75,65 90,65 C105,65 110,60 110,60 C110,60 105,55 90,55 C75,55 60,40 60,25 Z'/%3E%3Cpath d='M60,45 C55,52 48,55 40,55 M60,75 C55,68 48,65 40,65 M60,45 C65,52 72,55 80,55 M60,75 C65,68 72,65 80,65'/%3E%3Ccircle cx='60' cy='60' r='5'/%3E%3Ccircle cx='0' cy='0' r='14'/%3E%3Ccircle cx='120' cy='0' r='14'/%3E%3Ccircle cx='0' cy='120' r='14'/%3E%3Ccircle cx='120' cy='120' r='14'/%3E%3Cpath d='M0,20 C10,20 20,10 20,0 M120,20 C110,20 100,10 100,0 M0,100 C10,100 20,110 20,120 M120,100 C110,100 100,110 100,120'/%3E%3C/g%3E%3C!-- Highlight Layer for Beige relief (subtle ivory highlight) --%3E%3Cg stroke='%23FFFDF9' stroke-width='1.1' opacity='0.8'%3E%3Cpath d='M60,10 C50,25 35,30 20,30 C5,30 0,45 0,60 C0,75 5,90 20,90 C35,90 50,95 60,110 C70,95 85,90 100,90 C115,90 120,75 120,60 C120,45 115,30 100,30 C85,30 70,25 60,10 Z'/%3E%3Cpath d='M60,25 C60,40 45,55 30,55 C15,55 10,60 10,60 C10,60 15,65 30,65 C45,65 60,80 60,95 C60,80 75,65 90,65 C105,65 110,60 110,60 C110,60 105,55 90,55 C75,55 60,40 60,25 Z'/%3E%3Cpath d='M60,45 C55,52 48,55 40,55 M60,75 C55,68 48,65 40,65 M60,45 C65,52 72,55 80,55 M60,75 C65,68 72,65 80,65'/%3E%3Ccircle cx='60' cy='60' r='5'/%3E%3Ccircle cx='0' cy='0' r='14'/%3E%3Ccircle cx='120' cy='0' r='14'/%3E%3Ccircle cx='0' cy='120' r='14'/%3E%3Ccircle cx='120' cy='120' r='14'/%3E%3Cpath d='M0,20 C10,20 20,10 20,0 M120,20 C110,20 100,10 100,0 M0,100 C10,100 20,110 20,120 M120,100 C110,100 100,110 100,120'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Glassmorphism */
+.glass-petrol,
+.glass-navy {
+  background: rgba(11, 30, 61, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-nav {
+  background: rgba(11, 30, 61, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Metallic engraving icon effect */
+.metallic-icon-engraved {
+  filter: drop-shadow(1px 1px 2px #081627) drop-shadow(-1px -1px 1px rgba(226, 232, 240, 0.4));
+}
+
+.metallic-icon-engraved-beige {
+  filter: drop-shadow(1px 1px 2px #E8DFCF) drop-shadow(-1px -1px 1px rgba(11, 30, 61, 0.45));
+}
+
+/* Shimmer animation for featured card border */
+@keyframes borderShimmer {
+  0% { border-color: rgba(226, 232, 240, 0.3); }
+  50% { border-color: rgba(241, 245, 249, 0.9); box-shadow: 0 0 20px rgba(226, 232, 240, 0.25); }
+  100% { border-color: rgba(226, 232, 240, 0.3); }
+}
+
+.featured-shimmer-border {
+  animation: borderShimmer 4s infinite ease-in-out;
+}
+
+/* Custom curtain reveal */
+.curtain-left {
+  transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.curtain-right {
+  transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/* Smooth 3D Perspective container */
+.perspective-container {
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #081627;
+}
+::-webkit-scrollbar-thumb {
+  background: #0B1E3D;
+  border-radius: 4px;
+  border: 1px solid rgba(226, 232, 240, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #18335E;
+}
+
+/* Fade slide up animation */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-slide-up {
+  animation: fadeSlideUp 0.7s ease-out forwards;
+}
